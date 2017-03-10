@@ -1,0 +1,21 @@
+{
+    "name": "shulha/store",
+    "description": "Application",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shulha",
+            "email": "shulhad@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "shulha/framework": "dev-dev"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/home/dmytro/projects/framework"
+        }
+    ]
+}
