@@ -18,6 +18,6 @@ return [
         "variables" => [
             "id" => "\d+"
         ],
-        "action" => "Mystore\\ProductController@getProduct"
+        "action" => "Mystore\\IndexController@getProduct"
     ]
 ];

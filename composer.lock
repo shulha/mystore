@@ -4,15 +4,16 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf2da4cff0134770207cae37cef17d6b",
+    "hash": "e724650e8e6eeb46ce1adab0dd34b374",
+    "content-hash": "18d27d180c937e1a7fb0907ec9011a17",
     "packages": [
         {
             "name": "shulha/framework",
             "version": "dev-dev",
             "dist": {
                 "type": "path",
-                "url": "/home/dmytro/projects/framework",
-                "reference": "d7f4f3eff2415f4a8ba909ffd51d0ecadfaed4a6",
+                "url": "/home/dym/projects/frame/framework/",
+                "reference": "5b48de6793da903d86f622ef53649c6a06c68b30",
                 "shasum": null
             },
             "type": "library",
