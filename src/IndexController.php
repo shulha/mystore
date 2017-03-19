@@ -17,7 +17,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return $this->render(__DIR__ . '/views/index.html.php', [], false);
+        return $this->render('index');
     }
 
     /**
@@ -25,7 +25,8 @@ class IndexController extends Controller
      */
     public function getProduct($id)
     {
-        return $this->render(__DIR__ . '/views/product.html.php', ["id" => $id]);
+        return $this->render('sample', ['name' => 'Vano', 'second' => 'TV', 'id' => $id]);
+//        return $this->render('hello');
     }
 
     public function createProduct()

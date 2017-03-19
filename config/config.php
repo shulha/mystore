@@ -2,5 +2,5 @@
 
 return [
     "routes" => include('routes.php'),
-    "main_layout" =>dirname(__FILE__, 2) . '/src/views/layout.html.php'
+    "path_to_views" => dirname(__FILE__, 2) . '/src/views',
 ];

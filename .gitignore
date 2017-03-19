@@ -2,3 +2,5 @@
 *.log
 vendor
 .idea
+/composer.lock
+/composer.json
