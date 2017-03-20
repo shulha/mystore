@@ -4,7 +4,7 @@ namespace Mystore;
 
 use Shulha\Framework\Controller\Controller;
 use Shulha\Framework\Request\Request;
-use Shulha\Framework\Response\JsonResponse;
+//use Shulha\Framework\Validation\Validator;
 
 /**
  * Class IndexController
@@ -15,33 +15,46 @@ class IndexController extends Controller
     /**
      * Index action
      */
-    public function index()
+    public function index(Request $request)
     {
-        return $this->render('index');
+//        debug($request);
+//
+//        return $this->render('error.404');
     }
 
     /**
      * Single prod
      */
-    public function getProduct($id)
+    public function getProduct($id, Request $request)
     {
-        return $this->render('sample', ['name' => 'Vano', 'second' => 'TV', 'id' => $id]);
+        debug($request);
+        return $this->render('sample', ['second' => 'TV', 'id' => $id]);
 //        return $this->render('hello');
     }
+
+//    public function getProduct(Request $request, $id, $name)
+//    {
+//        return $this->render('sample', ['name' => $name, 'second' => 'TV', 'id' => $id]);
+////        return $this->render('hello');
+//    }
 
     public function createProduct()
     {
         $request = Request::getInstance();
 
+
+//        debug ($_POST);
+//        echo $_REQUEST['title'];
+
         $validator = new Validator($request, [
-            "title" => ["required", "length_between:3,100"],
-            "price" => ["required", "numeric", "min:0"]
+            "title" => ["numeric"],
+//            "price" => ["required", "numeric", "min:0"]
         ]);
 
         if (!$validator->validate()) {
             return new JsonResponse([
                 "success" => false,
-                "error" => $validator->getErrors()
+                "error" => $validator->getErrorList()
             ], 400);
         }
 
@@ -52,10 +65,40 @@ class IndexController extends Controller
                 "success" => true,
                 "data" => [
                     "title" => $request->title,
-                    "price" => $request->price,
-                    "description" => $request->description
+//                    "price" => $request->price,
+//                    "description" => $request->description
                 ]
             ]
         );
     }
+
+//    public function createProduct()
+//    {
+//        $request = Request::getInstance();
+//
+//        $validator = new Validator($request, [
+//            "title" => ["required", "length_between:3,100"],
+//            "price" => ["required", "numeric", "min:0"]
+//        ]);
+//
+//        if (!$validator->validate()) {
+//            return new JsonResponse([
+//                "success" => false,
+//                "error" => $validator->getErrors()
+//            ], 400);
+//        }
+//
+//        //todo create new product and persist
+//
+//        return new JsonResponse(
+//            [
+//                "success" => true,
+//                "data" => [
+//                    "title" => $request->title,
+//                    "price" => $request->price,
+//                    "description" => $request->description
+//                ]
+//            ]
+//        );
+//    }
 }

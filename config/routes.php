@@ -4,13 +4,15 @@ return [
     "root" => [
         "pattern" => "/",
         "method" => "GET",
-        "action" => "Mystore\\IndexController@index"
+        "action" => "Mystore\\IndexController@index",
+        "middlewares" => ['admin', 'age'],
     ],
     "product_list" =>
         [
             "pattern" => "/product",
             "method" => "GET",
-            "action" => "Mystore\\ProductController@getAllGoods"
+            "action" => "Mystore\\ProductController@getAllGoods",
+            "middlewares" => ['age', 'admin', 'first', 'second', 'third'],
         ],
     "single_product" => [
         "pattern" => "/product/{id}",
@@ -19,5 +21,10 @@ return [
             "id" => "\d+"
         ],
         "action" => "Mystore\\IndexController@getProduct"
+    ],
+    "create_product" => [
+        "pattern" => "/product",
+        "method" => "POST",
+        "action" => "Mystore\\IndexController@createProduct"
     ]
 ];
