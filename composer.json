@@ -10,7 +10,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "shulha/framework": "dev-feat-mid"
+        "shulha/framework": "dev-feat-middleware"
     },
     "repositories": [
         {

@@ -6,7 +6,6 @@ return [
     "router" => [
         'config' => include('routes.php')
     ],
-//    "views" => realpath(dirname(__FILE__) . "/../views"),
     "db" => [
         'host' => 'localhost',
         'db' => 'myapp',
@@ -14,11 +13,7 @@ return [
         'password' => ''
     ],
     "services" => include('services.php'),
-    "middlewares" => [
+    "middlewaresMap" => [
         'age' => 'Mystore\\Middlewares\\AgeMiddleware',
-        'admin' => 'Mystore\\Middlewares\\IsAdminMiddleware',
-        'first' => 'Mystore\\Middlewares\\FirstMiddleware',
-        'second' => 'Mystore\\Middlewares\\SecondMiddleware',
-        'third' => 'Mystore\\Middlewares\\ThirdMiddleware',
     ],
 ];

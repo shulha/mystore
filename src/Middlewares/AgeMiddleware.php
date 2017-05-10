@@ -3,18 +3,18 @@
 namespace Mystore\Middlewares;
 
 use Closure;
-use Shulha\Framework\Middleware\Middleware;
+use Shulha\Framework\Middleware\MiddlewareInterface;
 use Shulha\Framework\Request\Request;
 
-class AgeMiddleware implements Middleware
+class AgeMiddleware implements MiddlewareInterface
 {
-    public function handle(Request $request, Closure $next)
+    public function handle(Request $request, Closure $next=null)
     {
-//        debug( $request );
-        if($request->getRequestVariable('age') >= 16){
-            return ' age ';
+        echo 'CheckAge<br>';
+        if ($request->getRequestVariable('age') < 18) {
+            throw new \Exception('AGE');
         }
 
-        var_dump($next($request));
+        return $next($request);
     }
 }

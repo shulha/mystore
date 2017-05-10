@@ -4,7 +4,7 @@ namespace Mystore;
 
 use Shulha\Framework\Controller\Controller;
 use Shulha\Framework\Request\Request;
-//use Shulha\Framework\Validation\Validator;
+use Shulha\Framework\Validation\Validator;
 
 /**
  * Class IndexController
@@ -18,8 +18,8 @@ class IndexController extends Controller
     public function index(Request $request)
     {
 //        debug($request);
-//
-//        return $this->render('error.404');
+
+        return $this->render('error.404');
     }
 
     /**

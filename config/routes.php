@@ -5,14 +5,14 @@ return [
         "pattern" => "/",
         "method" => "GET",
         "action" => "Mystore\\IndexController@index",
-        "middlewares" => ['admin', 'age'],
+        "middlewares" => ['age', 'check_token:token,validtoken'],
     ],
     "product_list" =>
         [
             "pattern" => "/product",
             "method" => "GET",
             "action" => "Mystore\\ProductController@getAllGoods",
-            "middlewares" => ['age', 'admin', 'first', 'second', 'third'],
+            "middlewares" => ['check_role:admin'],
         ],
     "single_product" => [
         "pattern" => "/product/{id}",

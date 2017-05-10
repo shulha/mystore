@@ -3,7 +3,9 @@
 namespace Mystore;
 
 
-class ProductController
+use Shulha\Framework\Controller\Controller;
+
+class ProductController extends Controller
 {
     /**
      * Single prod
@@ -11,5 +13,10 @@ class ProductController
     public function getProduct($id){
 
         echo sprintf("Hi! You requested %s with color", $id);
+    }
+
+    public function getAllGoods()
+    {
+
     }
 }

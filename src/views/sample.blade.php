@@ -6,7 +6,7 @@
     $hello = 'Hello'
     @endphp
 
-    <p>{{ $hello }}, {{ $name }}</p>
+    <p>{{ $hello }}</p>
     <p>{{ date("Y-m-d H:i:s") }}</p>
     <p>Smart {{ $second }}<br>
     <b>{{ $id }}</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
