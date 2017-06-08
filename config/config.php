@@ -1,19 +1,19 @@
 <?php
 
 return [
-//    "routes" => include('routes.php'),
-    "path_to_views" => dirname(__FILE__, 2) . '/src/views',
+    "db" => [
+        'driver' => 'pgsql',
+        'host'   => 'localhost',
+        'database' => 'store',
+        'username'   => 'postgres',
+        'password' => '321',
+        'charset'  => 'utf8',
+        'schema'   => 'public',
+    ],
+    "login" => '/login',
+    "path_to_views" => realpath(dirname(__FILE__) . "/../src/View"),
+    "services" => include('services.php'),
     "router" => [
         'config' => include('routes.php')
-    ],
-    "db" => [
-        'host' => 'localhost',
-        'db' => 'myapp',
-        'user' => 'root',
-        'password' => ''
-    ],
-    "services" => include('services.php'),
-    "middlewaresMap" => [
-        'age' => 'Mystore\\Middlewares\\AgeMiddleware',
-    ],
+    ]
 ];

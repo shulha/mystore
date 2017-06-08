@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "567fcbb33f4793d91323151061e8d531",
-    "content-hash": "b1fff5255b8dc1da2b5c69027cdfee27",
+    "content-hash": "e35eeba0b850f3ff2c323493dbb0ca75",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -13,29 +12,29 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "803a2ed9fea02f9ca47cd45395089fe78769a392"
+                "reference": "6dcae3aee85691db6df6e91e3b5e10911429516c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/803a2ed9fea02f9ca47cd45395089fe78769a392",
-                "reference": "803a2ed9fea02f9ca47cd45395089fe78769a392",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/6dcae3aee85691db6df6e91e3b5e10911429516c",
+                "reference": "6dcae3aee85691db6df6e91e3b5e10911429516c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "php": "^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.*"
+                "phpunit/phpunit": "^6.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Doctrine\\Common\\Inflector\\": "lib/"
+                "psr-4": {
+                    "Doctrine\\Common\\Inflector\\": "lib/Doctrine/Common/Inflector"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -72,7 +71,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2016-05-12 17:23:41"
+            "time": "2017-06-08 15:16:24"
         },
         {
             "name": "illuminate/container",
@@ -80,12 +79,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
-                "reference": "8fbb101a6081786e830cb89d1a1faa846c2c0442"
+                "reference": "27e0ea43428c99de68264c7f9fbdc22f8b0839c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/container/zipball/8fbb101a6081786e830cb89d1a1faa846c2c0442",
-                "reference": "8fbb101a6081786e830cb89d1a1faa846c2c0442",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/27e0ea43428c99de68264c7f9fbdc22f8b0839c6",
+                "reference": "27e0ea43428c99de68264c7f9fbdc22f8b0839c6",
                 "shasum": ""
             },
             "require": {
@@ -115,7 +114,7 @@
             ],
             "description": "The Illuminate Container package.",
             "homepage": "https://laravel.com",
-            "time": "2017-04-18 18:17:06"
+            "time": "2017-06-01 13:02:42"
         },
         {
             "name": "illuminate/contracts",
@@ -123,12 +122,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "d323eb2ac74cfa73ba11d7a9ceb054ea9576404f"
+                "reference": "682713dac3664e1f273c0900ac19cdbef5a4ab2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/d323eb2ac74cfa73ba11d7a9ceb054ea9576404f",
-                "reference": "d323eb2ac74cfa73ba11d7a9ceb054ea9576404f",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/682713dac3664e1f273c0900ac19cdbef5a4ab2a",
+                "reference": "682713dac3664e1f273c0900ac19cdbef5a4ab2a",
                 "shasum": ""
             },
             "require": {
@@ -157,7 +156,7 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2017-04-19 20:28:18"
+            "time": "2017-06-08 13:05:39"
         },
         {
             "name": "illuminate/events",
@@ -165,12 +164,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
-                "reference": "8121be087f641c2342e9c864302de03c79fe9f3f"
+                "reference": "f491f84e9f8597252b02e6f7bf8c66d4403c0ffd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/events/zipball/8121be087f641c2342e9c864302de03c79fe9f3f",
-                "reference": "8121be087f641c2342e9c864302de03c79fe9f3f",
+                "url": "https://api.github.com/repos/illuminate/events/zipball/f491f84e9f8597252b02e6f7bf8c66d4403c0ffd",
+                "reference": "f491f84e9f8597252b02e6f7bf8c66d4403c0ffd",
                 "shasum": ""
             },
             "require": {
@@ -202,7 +201,7 @@
             ],
             "description": "The Illuminate Events package.",
             "homepage": "https://laravel.com",
-            "time": "2017-04-09 14:36:27"
+            "time": "2017-05-15 17:19:57"
         },
         {
             "name": "illuminate/filesystem",
@@ -210,19 +209,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
-                "reference": "d0a35a1aa04084df2e122e81c56c2db132479f83"
+                "reference": "4a9096929e20f04baf2ecda7b6c43bd4e9eb84af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/d0a35a1aa04084df2e122e81c56c2db132479f83",
-                "reference": "d0a35a1aa04084df2e122e81c56c2db132479f83",
+                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/4a9096929e20f04baf2ecda7b6c43bd4e9eb84af",
+                "reference": "4a9096929e20f04baf2ecda7b6c43bd4e9eb84af",
                 "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "5.5.*",
                 "illuminate/support": "5.5.*",
                 "php": ">=7.0",
-                "symfony/finder": "~3.2"
+                "symfony/finder": "~3.3"
             },
             "suggest": {
                 "league/flysystem": "Required to use the Flysystem local and FTP drivers (~1.0).",
@@ -252,7 +251,7 @@
             ],
             "description": "The Illuminate Filesystem package.",
             "homepage": "https://laravel.com",
-            "time": "2017-04-24 13:29:21"
+            "time": "2017-05-30 13:53:07"
         },
         {
             "name": "illuminate/support",
@@ -260,12 +259,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "b357e871a2584c46ce83586d022b02f028e9d143"
+                "reference": "8a1b03e4be6f183836684ee73d4d4c817ac7ce6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/b357e871a2584c46ce83586d022b02f028e9d143",
-                "reference": "b357e871a2584c46ce83586d022b02f028e9d143",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/8a1b03e4be6f183836684ee73d4d4c817ac7ce6f",
+                "reference": "8a1b03e4be6f183836684ee73d4d4c817ac7ce6f",
                 "shasum": ""
             },
             "require": {
@@ -279,8 +278,8 @@
             },
             "suggest": {
                 "illuminate/filesystem": "Required to use the composer class (5.2.*).",
-                "symfony/process": "Required to use the composer class (~3.2).",
-                "symfony/var-dumper": "Required to use the dd function (~3.2)."
+                "symfony/process": "Required to use the composer class (~3.3).",
+                "symfony/var-dumper": "Required to use the dd function (~3.3)."
             },
             "type": "library",
             "extra": {
@@ -308,7 +307,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2017-04-19 21:50:09"
+            "time": "2017-06-08 13:02:12"
         },
         {
             "name": "illuminate/view",
@@ -316,12 +315,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
-                "reference": "64b648b3b045ea210a559df97e4d6bc9d95ae11e"
+                "reference": "6a304d08fd43dadd3347f3c0f5244f6f4aa1fc96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/view/zipball/64b648b3b045ea210a559df97e4d6bc9d95ae11e",
-                "reference": "64b648b3b045ea210a559df97e4d6bc9d95ae11e",
+                "url": "https://api.github.com/repos/illuminate/view/zipball/6a304d08fd43dadd3347f3c0f5244f6f4aa1fc96",
+                "reference": "6a304d08fd43dadd3347f3c0f5244f6f4aa1fc96",
                 "shasum": ""
             },
             "require": {
@@ -331,7 +330,7 @@
                 "illuminate/filesystem": "5.5.*",
                 "illuminate/support": "5.5.*",
                 "php": ">=7.0",
-                "symfony/debug": "~3.2"
+                "symfony/debug": "~3.3"
             },
             "type": "library",
             "extra": {
@@ -356,7 +355,7 @@
             ],
             "description": "The Illuminate View package.",
             "homepage": "https://laravel.com",
-            "time": "2017-04-09 14:36:27"
+            "time": "2017-06-08 13:02:12"
         },
         {
             "name": "psr/log",
@@ -407,16 +406,16 @@
         },
         {
             "name": "rdlowrey/auryn",
-            "version": "v1.4.1",
+            "version": "v1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rdlowrey/auryn.git",
-                "reference": "c6c92ec081c707f7e9e0a69185665147b30d66de"
+                "reference": "8c4dc07943599ba84f4f89eab8cf43efeef80395"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rdlowrey/auryn/zipball/c6c92ec081c707f7e9e0a69185665147b30d66de",
-                "reference": "c6c92ec081c707f7e9e0a69185665147b30d66de",
+                "url": "https://api.github.com/repos/rdlowrey/auryn/zipball/8c4dc07943599ba84f4f89eab8cf43efeef80395",
+                "reference": "8c4dc07943599ba84f4f89eab8cf43efeef80395",
                 "shasum": ""
             },
             "require": {
@@ -464,20 +463,26 @@
                 "dic",
                 "ioc"
             ],
-            "time": "2017-04-07 16:12:28"
+            "time": "2017-05-15T06:26:46+00:00"
         },
         {
             "name": "shulha/framework",
-            "version": "dev-feat-middleware",
+            "version": "dev-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/shulha/myframe.git",
+                "reference": "c3ad745cf16472dab8aa7dc8a4187cb653928a49"
+            },
             "dist": {
-                "type": "path",
-                "url": "/home/dym/projects/frame/framework/",
-                "reference": "e8b11dba96c9c0c94074247f209f258ddc32fb1d",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/shulha/myframe/zipball/c3ad745cf16472dab8aa7dc8a4187cb653928a49",
+                "reference": "c3ad745cf16472dab8aa7dc8a4187cb653928a49",
+                "shasum": ""
             },
             "require": {
                 "illuminate/view": "^5.4",
-                "rdlowrey/auryn": "^1.4"
+                "rdlowrey/auryn": "^1.4",
+                "usmanhalalit/pixie": "^2.0"
             },
             "type": "library",
             "autoload": {
@@ -494,20 +499,25 @@
                     "email": "shulhad@gmail.com"
                 }
             ],
-            "description": "Sample FW"
+            "description": "Sample FW",
+            "support": {
+                "source": "https://github.com/shulha/myframe/tree/dev",
+                "issues": "https://github.com/shulha/myframe/issues"
+            },
+            "time": "2017-06-08 17:51:52"
         },
         {
             "name": "symfony/debug",
-            "version": "dev-master",
+            "version": "3.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "2a237220d7d24a4ac867f701fe07320f341b2454"
+                "reference": "9d40ad561ed0ca824de0c514077dc39e5d6b2605"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/2a237220d7d24a4ac867f701fe07320f341b2454",
-                "reference": "2a237220d7d24a4ac867f701fe07320f341b2454",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/9d40ad561ed0ca824de0c514077dc39e5d6b2605",
+                "reference": "9d40ad561ed0ca824de0c514077dc39e5d6b2605",
                 "shasum": ""
             },
             "require": {
@@ -518,12 +528,12 @@
                 "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
             },
             "require-dev": {
-                "symfony/http-kernel": "~2.8|~3.0"
+                "symfony/http-kernel": "~2.8|~3.0|~4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -550,20 +560,20 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-04-20 17:12:40"
+            "time": "2017-06-07 14:09:28"
         },
         {
             "name": "symfony/finder",
-            "version": "dev-master",
+            "version": "3.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "ce309911aabd89ef885673ddb924076c1c410356"
+                "reference": "295fa37f13dbc4bba200680d2f4ae2c4a1f77709"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/ce309911aabd89ef885673ddb924076c1c410356",
-                "reference": "ce309911aabd89ef885673ddb924076c1c410356",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/295fa37f13dbc4bba200680d2f4ae2c4a1f77709",
+                "reference": "295fa37f13dbc4bba200680d2f4ae2c4a1f77709",
                 "shasum": ""
             },
             "require": {
@@ -572,7 +582,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -599,7 +609,110 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2017-04-12 14:14:56"
+            "time": "2017-06-01 21:02:15"
+        },
+        {
+            "name": "usmanhalalit/pixie",
+            "version": "2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/usmanhalalit/pixie.git",
+                "reference": "35378d7acff314bf20fbd3dfa8006b1a036ffc02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/usmanhalalit/pixie/zipball/35378d7acff314bf20fbd3dfa8006b1a036ffc02",
+                "reference": "35378d7acff314bf20fbd3dfa8006b1a036ffc02",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "usmanhalalit/viocon": "1.0.*@dev"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.4",
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Pixie": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Muhammad Usman",
+                    "email": "hi@usman.it",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Pavel Puchkin",
+                    "email": "i@neoascetic.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A lightweight, expressive, framework agnostic query builder for PHP.",
+            "homepage": "https://github.com/usmanhalalit/pixie",
+            "keywords": [
+                "database",
+                "mysql",
+                "postgresql",
+                "query builder",
+                "sql",
+                "sqlite"
+            ],
+            "time": "2016-04-12 11:50:49"
+        },
+        {
+            "name": "usmanhalalit/viocon",
+            "version": "1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/usmanhalalit/viocon.git",
+                "reference": "0878afee16f15355971fb95bf3c6d297aceff35d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/usmanhalalit/viocon/zipball/0878afee16f15355971fb95bf3c6d297aceff35d",
+                "reference": "0878afee16f15355971fb95bf3c6d297aceff35d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Viocon": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Muhammad Usman",
+                    "email": "hi@usman.it",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple and flexible Dependency Injection container for PHP.",
+            "homepage": "https://github.com/usmanhalalit/viocon",
+            "keywords": [
+                "container",
+                "di",
+                "ioc",
+                "test"
+            ],
+            "time": "2013-07-13 19:54:56"
         }
     ],
     "packages-dev": [],

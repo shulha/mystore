@@ -10,12 +10,12 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "shulha/framework": "dev-feat-middleware"
+        "shulha/framework": "dev-dev"
     },
     "repositories": [
         {
-            "type": "path",
-            "url": "/home/dym/projects/frame/framework"
+            "type": "vcs",
+            "url": "https://github.com/shulha/myframe"
         }
     ]
 }

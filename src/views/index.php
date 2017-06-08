@@ -1,1 +1,0 @@
-<p>All products:</p>
