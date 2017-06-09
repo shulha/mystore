@@ -34,7 +34,7 @@ class Products extends Model
      */
     public function search($search)
     {
-        return $this->qb->query('SELECT p.id, p.title, p.description, p.price, p.article, pv.value, par.title as par_title
+        return $this->qb->query('SELECT DISTINCT p.id, p.title, p.description, p.price, p.article, pv.value, par.title as par_title
                                  FROM products p 
                                  LEFT JOIN parameters_values pv ON p.id = pv.products_id
                                  LEFT JOIN parameters par ON pv.parameters_id = par.id

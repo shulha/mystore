@@ -1,7 +1,9 @@
 @extends('layout.main')
 
 @section('content')
-    @include('partials.sort')
+    @if(isset($slug))
+        @include('partials.sort')
+    @endif
     <br>
     <div class="row masonry" data-columns>
         @foreach($products as $product)
@@ -28,13 +30,15 @@
             </div>
         @endforeach
     </div>
-    <div class="text-center">
-        <form method="post" action="/category/{{$slug}}/{{$id}}/{{$limit}}">
-            <input type="hidden" class="form-control" name="order_field" value={{$order_field}}>
-            <input type="hidden" class="form-control" name="order_direct" value={{$order_direct}}>
-            <button type="submit" class="btn btn-default btn-lg">
-                <span class="glyphicon glyphicon-share-alt"></span> Показать еще ...
-            </button>
-        </form>
-    </div>
+    @if(isset($limit))
+        <div class="text-center">
+            <form method="post" action="/category/{{$slug}}/{{$id}}/{{$limit}}">
+                <input type="hidden" class="form-control" name="order_field" value={{$order_field}}>
+                <input type="hidden" class="form-control" name="order_direct" value={{$order_direct}}>
+                <button type="submit" class="btn btn-default btn-lg">
+                    <span class="glyphicon glyphicon-share-alt"></span> Показать еще ...
+                </button>
+            </form>
+        </div>
+    @endif
 @endsection

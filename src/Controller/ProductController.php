@@ -84,7 +84,21 @@ class ProductController extends Controller
             return new RedirectResponse('/category/'.$request->slug.'/' . $request->id, 200);
         }
 
-        $results = $model->search($request->search);
+        $objects = $model->search($request->search);
+
+        usort( $objects, function($a, $b)
+        {
+            return strcmp( $a->id, $b->id) ?:
+                (($a->id == $b->id) ? 0 : (($a->id < $b->id) ? -1 : 1));
+        });
+
+        $results = array_filter( $objects, function ($x){
+            static $id;
+            if( $x->id === $id)
+                return false;
+            $id = $x->id;
+            return true;
+        });
 
         return view('search', compact('results'));
     }
@@ -186,7 +200,7 @@ class ProductController extends Controller
      */
     public function last(Products $item)
     {
-        $products = $item->qb->table($item->table)->orderBy('created_at', 'DESC')->limit(3)->get();
+        $products = $item->qb->table($item->table)->orderBy('created_at', 'DESC')->limit(6)->get();
 
         return view('categoryProduct', compact('products'));
     }
