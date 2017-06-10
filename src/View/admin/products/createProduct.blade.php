@@ -42,6 +42,7 @@
     <hr>
     <button class="btn btn-primary btn-lg add_button" type="button">Добавить</button>
     <hr>
+    <input type="hidden" name="token" value="{{csrf_token()}}"/>
     <button class="btn btn-default btn-lg save_item" type="submit">Сохранить товар</button>
 </form>
 @endsection

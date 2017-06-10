@@ -45,6 +45,7 @@
                 <textarea class="form-control" rows="4" name="address"></textarea><br>
                 <label for="phone">Телефон</label><br>
                 <input class="form-control" type="text" name="phone"/><br>
+                <input type="hidden" name="token" value="{{csrf_token()}}"/>
                 <button type="submit" class="btn btn-primary btn-lg">Заказать</button>
             </form>
         @endif

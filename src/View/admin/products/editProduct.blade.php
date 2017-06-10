@@ -85,6 +85,7 @@
             </div>
         @endforeach
         <hr>
+        <input type="hidden" name="token" value="{{csrf_token()}}"/>
         <button type="submit" class="btn btn-default btn-lg save_item">Сохранить товар</button>
     </form>
 </div>

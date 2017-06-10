@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e35eeba0b850f3ff2c323493dbb0ca75",
+    "content-hash": "cf2da4cff0134770207cae37cef17d6b",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -468,16 +468,11 @@
         {
             "name": "shulha/framework",
             "version": "dev-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/shulha/myframe.git",
-                "reference": "c3ad745cf16472dab8aa7dc8a4187cb653928a49"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/shulha/myframe/zipball/c3ad745cf16472dab8aa7dc8a4187cb653928a49",
+                "type": "path",
+                "url": "/home/dmytro/projects/framework",
                 "reference": "c3ad745cf16472dab8aa7dc8a4187cb653928a49",
-                "shasum": ""
+                "shasum": null
             },
             "require": {
                 "illuminate/view": "^5.4",
@@ -499,12 +494,7 @@
                     "email": "shulhad@gmail.com"
                 }
             ],
-            "description": "Sample FW",
-            "support": {
-                "source": "https://github.com/shulha/myframe/tree/dev",
-                "issues": "https://github.com/shulha/myframe/issues"
-            },
-            "time": "2017-06-08 17:51:52"
+            "description": "Sample FW"
         },
         {
             "name": "symfony/debug",

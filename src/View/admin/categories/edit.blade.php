@@ -36,6 +36,7 @@
                 <option value="{{$category->id}}">{{$category->name}}</option>
             @endforeach
         </select></p>
-    <p><input type="submit" value="Сохранить"></p>
+        <input type="hidden" name="token" value="{{csrf_token()}}"/>
+        <p><input type="submit" value="Сохранить"></p>
     </form>
 @endsection

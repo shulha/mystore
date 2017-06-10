@@ -221,7 +221,8 @@ return [
     "checkout" => [
         "pattern" => "/checkout",
         "method" => "POST",
-        "action" => "Mystore\\Controller\\BasketController@checkout"
+        "action" => "Mystore\\Controller\\BasketController@checkout",
+        "middlewares" => ['check_token'],
     ],
     "all_orders" => [
         "pattern" => "/adminzone/orders",
