@@ -191,7 +191,7 @@ class CategoriesController extends Controller
         if ($categories)
             return view('categories', compact('categories', 'slug'));
         else
-            return new RedirectResponse('/category/'.$slug.'/' . $id, 200);
+            return new RedirectResponse('/category/'.$slug.'/', 200);
     }
 
     /**

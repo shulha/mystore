@@ -13,7 +13,7 @@
     </div><!-- /.col-lg-6 -->
 
     <div class="col-xs-6">
-    <form method="post" action="/category/{{$slug}}/{{$id}}" class="pull-right sort_short control-group">
+    <form method="post" action="/category/{{$slug}}/" class="pull-right sort_short control-group">
         <small>сортировать по</small>
         <div class="btn-group btn-group-sm">
             <button type="submit" class="btn btn-default btn-effect " name="sort[updated_at]">дате</button>

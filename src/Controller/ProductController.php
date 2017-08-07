@@ -22,14 +22,16 @@ class ProductController extends Controller
     /**
      * Show all product of category
      *
-     * @param $id
      * @param $slug
      * @param Request $request
      * @param Products $model
+     * @param Category $categories
      * @return mixed
+     * @internal param $id
      */
-    public function index($id, $slug, Request $request, Products $model)
+    public function index($slug, Request $request, Products $model, Category $categories)
     {
+        $id = $categories->qb->table($categories->table)->where('url', '=', $slug)->first()->id;
         $limit = $request->numpos ?? 12;
         $order_field = ($request->sort) ? key($request->sort) : 'updated_at';
         $order_direct = $request->direction ?? 'DESC';
@@ -43,15 +45,17 @@ class ProductController extends Controller
     /**
      * Show next products aka pagination
      *
-     * @param $id
      * @param $slug
      * @param $limit
      * @param Request $request
      * @param Products $model
+     * @param Category $categories
      * @return mixed
+     * @internal param $id
      */
-    public function next($id, $slug, $limit, Request $request, Products $model)
+    public function next($slug, $limit, Request $request, Products $model, Category $categories)
     {
+        $id = $categories->qb->table($categories->table)->where('url', '=', $slug)->first()->id;
         $limit = 2*(int)$limit;
         $order_field = $request->order_field;
         $order_direct = $request->order_direct;

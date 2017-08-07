@@ -114,16 +114,15 @@ return [
         "action" => "Mystore\\Controller\\ProductController@search"
     ],
     "products_of_category" => [
-        "pattern" => "/category/{slug}/{id}",
+        "pattern" => "/category/{slug}/",
         "method" => "GET",
         "variables" => [
-            "id" => "\d+",
             "slug"
         ],
         "action" => "Mystore\\Controller\\ProductController@index"
     ],
     "product_sorting" => [
-        "pattern" => "/category/{slug}/{id}",
+        "pattern" => "/category/{slug}/",
         "method" => "POST",
         "variables" => [
             "id" => "\d+",
@@ -132,10 +131,9 @@ return [
         "action" => "Mystore\\Controller\\ProductController@index"
     ],
     "product_next" => [
-        "pattern" => "/category/{slug}/{id}/{limit}",
+        "pattern" => "/category/{slug}/{limit}",
         "method" => "POST",
         "variables" => [
-            "id" => "\d+",
             "slug",
             "limit" => "\d+"
         ],

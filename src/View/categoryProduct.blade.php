@@ -32,7 +32,7 @@
     </div>
     @if(isset($limit))
         <div class="text-center">
-            <form method="post" action="/category/{{$slug}}/{{$id}}/{{$limit}}">
+            <form method="post" action="/category/{{$slug}}/{{$limit}}">
                 <input type="hidden" class="form-control" name="order_field" value={{$order_field}}>
                 <input type="hidden" class="form-control" name="order_direct" value={{$order_direct}}>
                 <button type="submit" class="btn btn-default btn-lg">
