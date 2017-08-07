@@ -14,8 +14,8 @@
     },
     "repositories": [
         {
-            "type": "path",
-            "url": "/home/dmytro/projects/framework"
+            "type": "vcs",
+            "url": "https://github.com/shulha/myframe"
         }
     ]
 }
