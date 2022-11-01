@@ -1,1 +1,7 @@
-Framework - https://github.com/shulha/myframe
+Framework locations https://github.com/shulha/myframe
+
+Setup:
+- Apache
+- PostgreSQL
+
+login: admin; password: admin

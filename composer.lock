@@ -470,7 +470,7 @@
             "version": "dev-dev",
             "dist": {
                 "type": "path",
-                "url": "/home/dmytro/projects/framework",
+                "url": "/home/dshulha/myframe",
                 "reference": "c3ad745cf16472dab8aa7dc8a4187cb653928a49",
                 "shasum": null
             },
