@@ -53,7 +53,7 @@
             </ul>
         </div>
         <div class="col-xs-4">
-            <p class="text-muted pull-right">© 2017 Company Name. All rights reserved</p>
+            <p class="text-muted pull-right">© 2022 Company Name. All rights reserved</p>
         </div>
     </div>
 </div>
